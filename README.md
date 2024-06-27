@@ -13,6 +13,10 @@ output
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/b5a1620c-4513-4fad-be22-c7678f07d004)
 ### fizzbuzz.js (practice question)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/fc47fd77-8a18-4966-8b98-62685ac04edf)
+## functions.js (Assignment 2 part 3)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/86016f20-34bd-4faf-8d43-bc4388c83088)
+
+
 
 
 
