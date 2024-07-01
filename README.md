@@ -25,6 +25,8 @@ output
 # Week 2
 ## welcome.js (Assignment 1)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/af5cf70b-2cec-4a9e-97e0-5d301205e892)
+## asynchronous.js (practice problem)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/874de0db-9de4-4ae4-97fb-81f359276735)
 
 
 
