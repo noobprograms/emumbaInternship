@@ -22,6 +22,11 @@ output
 ### beanCounting.js (practice question)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c02c8c1d-3c6e-43b7-881d-7e8e310246c1)
 
+# Week 2
+## welcome.js (Assignment 1)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/af5cf70b-2cec-4a9e-97e0-5d301205e892)
+
+
 
 
 
