@@ -35,6 +35,9 @@ output
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/2d24facf-cc46-42d2-90b9-896f1c79bfc9)
 ## Assignment 2 (Difference between synchronous and asynchronous programming)
 Document Link: https://docs.google.com/document/d/1q_HeFPUABuKnNmciEnS0PTv1mfU1EE7pGTX29ZL35b8/edit?usp=sharing
+## Assignment 3 (file.js)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/e2826956-c364-408d-a9bf-2289b9f35570)
+
 
 
 
