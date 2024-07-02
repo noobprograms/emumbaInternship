@@ -29,6 +29,8 @@ output
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/874de0db-9de4-4ae4-97fb-81f359276735)
 ## event.js (practice problem)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c38424c1-44a0-49dd-ac11-43a7c76654c6)
+## Assignment 2 (Difference between synchronous and asynchronous programming)
+Document Link: https://docs.google.com/document/d/1q_HeFPUABuKnNmciEnS0PTv1mfU1EE7pGTX29ZL35b8/edit?usp=sharing
 
 
 
