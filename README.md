@@ -35,6 +35,8 @@ output
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ac454cb8-01a1-43a9-be9a-ab13d2e5a5ae)
 ## Assignment 2 (Difference between synchronous and asynchronous programming)
 Document Link: https://docs.google.com/document/d/1q_HeFPUABuKnNmciEnS0PTv1mfU1EE7pGTX29ZL35b8/edit?usp=sharing
+## kepler example for csv-parse(practice question)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/0764c4d7-5f2c-41fe-8419-a191599dc7e7)
 ## Assignment 3 (file.js)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/e2826956-c364-408d-a9bf-2289b9f35570)
 
