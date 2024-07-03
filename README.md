@@ -48,7 +48,11 @@ document link https://docs.google.com/document/d/18cohMQsc3YZ7jKCay3sYjldv9zwhdR
 ## Assignment 1
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/af98d1d9-651f-40f7-b664-32adcbffaf90)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/92f162d6-c5bc-4a21-967e-3b604d619c5b)
-![Uploading image.png…]()
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/b446288f-06bc-47de-bac2-cd82c668bbe8)
+
+## Assignment 2(logger middleware)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/7edf3552-99c2-45f4-b87e-119f1178e18b)
+
 
 
 
