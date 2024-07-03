@@ -44,6 +44,14 @@ Document Link: https://docs.google.com/document/d/1q_HeFPUABuKnNmciEnS0PTv1mfU1E
 ## Assignment 5
 document link https://docs.google.com/document/d/18cohMQsc3YZ7jKCay3sYjldv9zwhdRrhHJ2MdRLLnSg/edit?usp=sharing
 
+# Week 3
+## Assignment 1
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/af98d1d9-651f-40f7-b664-32adcbffaf90)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/92f162d6-c5bc-4a21-967e-3b604d619c5b)
+![Uploading image.png…]()
+
+
+
 
 
 
