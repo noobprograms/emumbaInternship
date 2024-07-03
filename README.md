@@ -52,6 +52,9 @@ document link https://docs.google.com/document/d/18cohMQsc3YZ7jKCay3sYjldv9zwhdR
 
 ## Assignment 2(logger middleware)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/7edf3552-99c2-45f4-b87e-119f1178e18b)
+## Assignment 3(error handling middleware)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/56bf75e3-5a24-4b14-93a9-9ade66290168)
+
 
 
 
