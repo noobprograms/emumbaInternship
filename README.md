@@ -39,6 +39,8 @@ Document Link: https://docs.google.com/document/d/1q_HeFPUABuKnNmciEnS0PTv1mfU1E
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/0764c4d7-5f2c-41fe-8419-a191599dc7e7)
 ## Assignment 3 (file.js)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/e2826956-c364-408d-a9bf-2289b9f35570)
+## Assignment 4 (expresswork folder)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/d7ef5c80-43ec-43b1-a836-fffd309f55a3)
 
 
 
