@@ -6,7 +6,6 @@
     "version": "1.0.0",
     "description": "Assignment 1 is already done",
     "main": "index.js",
-    "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon myFile.js"
