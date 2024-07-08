@@ -55,6 +55,18 @@ document link https://docs.google.com/document/d/18cohMQsc3YZ7jKCay3sYjldv9zwhdR
 ## Assignment 3(error handling middleware)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/56bf75e3-5a24-4b14-93a9-9ade66290168)
 
+# Extra CRUD assignment
+## Get
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/8765e24c-7f64-409e-918b-eb9fc42863a7)
+## Post
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/8769de44-7c91-45b2-b63c-efca446293d4)
+## Put
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/eb6b7a4b-f87d-44ad-80b7-6664c0a0737e)
+## Delete
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/1b1ec20e-bdf9-41d9-8f32-c97bc1fa14c5)
+
+
+
 
 
 
