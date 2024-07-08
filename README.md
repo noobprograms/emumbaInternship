@@ -65,6 +65,15 @@ document link https://docs.google.com/document/d/18cohMQsc3YZ7jKCay3sYjldv9zwhdR
 ## Delete
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/1b1ec20e-bdf9-41d9-8f32-c97bc1fa14c5)
 
+# Week 4
+Setting up mongod and connecting to it locally
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/0f9a9c1d-dc6c-47d2-8290-a4ebcbb14fce)
+## Performing crud in mongodb compass
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ffaa7b25-1af5-4f48-a1ff-2cda2c9515be)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/8f4e587f-fdb6-4280-a62c-7e4213d8f1ec)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/a94d5623-99e9-428f-b4ed-1bdbf2339fa2)
+
+
 
 
 
