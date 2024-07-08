@@ -8,11 +8,11 @@ const jsonParser = bodyParser.json();
 
 userRouter.post('/addUser', jsonParser, addUser);
 
-userRouter.get('/getUser:id', getUser);
+userRouter.get('/getUser', getUser);
 
-userRouter.put('/updateUser:id', jsonParser, updateUser);
+userRouter.put('/updateUser/:id', jsonParser, updateUser);
 
-userRouter.delete('/deleteUser:id', deleteUser);
+userRouter.delete('/deleteUser/:id', deleteUser);
 
 
 
