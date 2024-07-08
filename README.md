@@ -75,7 +75,20 @@ Setting up mongod and connecting to it locally
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/a94d5623-99e9-428f-b4ed-1bdbf2339fa2)
 ## Assignment 2 (Setting up the user schema)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/f8a3addb-9a4f-4f84-8df1-f4754a2f8107)
-## Performing CRUD in MongoDB using mongoose
+## Assignment3 (Performing CRUD in MongoDB using mongoose)
+### Read users using mongoose
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/8a555685-6c7b-475f-91eb-22abafada28a)
+### Create Users using mongoose
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/5bf13203-c00b-43f4-b7ae-189b7b7b51b3)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c7904930-47f1-4601-99ce-69867aa59870)
+### Update users using mongoose
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/7481cb34-038e-4e50-a3eb-e753fde22031)
+## Delete users using mongoose
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ad272b60-9057-47da-9f3a-a2ad323cb46d)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/da00469b-5aa0-40d7-bb08-9e3af795fdf6)
+
+
+
 
 
 
