@@ -87,6 +87,18 @@ Setting up mongod and connecting to it locally
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ad272b60-9057-47da-9f3a-a2ad323cb46d)
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/da00469b-5aa0-40d7-bb08-9e3af795fdf6)
 
+# Week 5 
+## Assignment 1
+### Querying only the animals that like carrots
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/7847fa97-dec2-4ac8-a2ea-da5df90781ed)
+### Getting all the animals that have their price less than or equal to 1000 and they are younger than 3 years
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/dfdbe193-9300-4b74-84d7-65d968bc536c)
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/5fc265eb-3134-4970-b94b-ae1e32beb5dc)
+
+
+
+
+
 
 
 
