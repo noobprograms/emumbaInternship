@@ -1,0 +1,95 @@
+[{
+        "name": "Whiskers",
+        "species": "cat",
+        "foods": {
+            "likes": ["celery", "strawberries"],
+            "dislikes": ["carrots"]
+        },
+        "age": 3,
+        "price": 1000
+    },
+    {
+        "name": "Woof",
+        "species": "dog",
+        "foods": {
+            "likes": ["dog food"],
+            "dislikes": ["cat food"]
+        },
+        "age": 5,
+        "price": 2000
+
+    },
+    {
+        "name": "Fluffy",
+        "species": "cat",
+        "foods": {
+            "likes": ["canned food"],
+            "dislikes": ["dry food"]
+        },
+        "age": 2,
+        "price": 500
+    },
+    {
+        "name": "Meowsy",
+        "species": "cat",
+        "foods": {
+            "likes": ["tuna", "catnip"],
+            "dislikes": ["ham", "zucchini"]
+        },
+        "age": 1,
+        "price": 1230
+
+    },
+    {
+        "name": "Barky",
+        "species": "dog",
+        "foods": {
+            "likes": ["bones", "carrots"],
+            "dislikes": ["tuna"]
+        },
+        "age": 4,
+        "price": 1500
+    },
+    {
+        "name": "Purrpaws",
+        "species": "cat",
+        "foods": {
+            "likes": ["mice"],
+            "dislikes": ["cookies"]
+        },
+        "age": 3,
+        "price": 1400
+    },
+    {
+        "name": "Kitty",
+        "species": "cat",
+        "foods": {
+            "likes": ["fresh food"],
+            "dislikes": ["stale food"]
+        },
+        "age": 0.5,
+        "price": 900
+
+    },
+    {
+        "name": "Pupster",
+        "species": "dog",
+        "foods": {
+            "likes": ["tomatoes", "peas"],
+            "dislikes": ["bread"]
+        },
+        "age": 2,
+        "price": 1200
+    },
+    {
+        "name": "Tux",
+        "species": "cat",
+        "foods": {
+            "likes": ["fancy dishes"],
+            "dislikes": ["basic cat food"]
+        },
+        "age": 1,
+        "price": 1000
+
+    }
+]

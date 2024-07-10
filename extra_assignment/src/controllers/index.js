@@ -1,7 +1,5 @@
-const addUser = require('./add_user_controller');
-const getUser = require('./get_user_controller');
-const updateUser = require('./update_user_controller');
-const deleteUser = require('./delete_user_controller');
+const { getUser, addUser, deleteUser, updateUser } = require('./user_controllers');
+
 
 module.exports = {
     addUser,
