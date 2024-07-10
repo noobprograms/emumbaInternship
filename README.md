@@ -93,6 +93,9 @@ Setting up mongod and connecting to it locally
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/8185b73e-ec0b-49b9-88cf-2edb0a13a766)
 ### Getting all the animals that have their price less than or equal to 1000 and they are younger than 3 years
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/9d6b8fe2-0e95-4786-8288-ba93784d85a9)
+### Getting all the animals whose age is less than 3 years and sorting them according to price
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/cc0625ef-262a-4c9e-8ad3-09218e3577fb)
+
 
 
 
