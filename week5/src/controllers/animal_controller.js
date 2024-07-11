@@ -28,10 +28,10 @@ async function getSpecificAnimal(req, res) {
         // console.log('this is ', typeof)
         if (req.query.sort) {
             console.log('this is insid ethe if statement')
-            var animals = await animal_model.find(queryobj).sort(req.query.sort);
+            var animals = await animal_model.find(queryobj).sort(req.query.sort).setOptions({ explain: 'executionStats' });
             res.status(200).json(animals);
         } else {
-            var animals = await animal_model.find(queryobj)
+            var animals = await animal_model.find(queryobj).setOptions({ explain: 'executionStats' });
             res.status(200).json(animals);
         }
 
@@ -41,7 +41,36 @@ async function getSpecificAnimal(req, res) {
     }
 
 }
-module.exports = { getAllAnimals, getSpecificAnimal };
+async function addAnimal(req, res) {
+    var animalReq = req.body;
+    try {
+        var animal = await animal_model.create(animalReq);
+        res.status(200).json({ "success": true, message: animal });
+    } catch (error) {
+        res.status(500).json({ 'success': true, message: error.message });
+    }
+}
+async function getAnimalDiscription(req, res) {
+    try {
+
+        const myAnimal = await animal_model.findOne({ name: req.query.name });
+
+        res.status(200).json({ status: "success", discription: myAnimal.clearDescription });
+    } catch (e) {
+        res.status(500).json(e.message);
+    }
+}
+async function getName(req, res) {
+    try {
+
+        const myAnimal = await animal_model.findOne({ name: req.query.name });
+
+        res.status(200).json({ status: "success", answer: myAnimal.displayName() });
+    } catch (e) {
+        res.status(500).json(e.message);
+    }
+}
+module.exports = { getAllAnimals, getSpecificAnimal, addAnimal, getAnimalDiscription, getName };
 
 //path module
 //static file in express(how to serve it )

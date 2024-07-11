@@ -37,6 +37,7 @@ async function getUser(req, res) {
         res.status(500).json(error.message);
     }
 }
+
 async function deleteUser(req, res) {
     const { id } = req.params;
 
