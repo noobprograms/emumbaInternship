@@ -107,6 +107,13 @@ Suppose we often need all the animals whose age is less than 4 without indexing,
 ### Testing out the pet specie custom validator.
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c40f6091-ae45-4daf-b776-634df267671a)
 
+## Assignment 3
+### Adding a virtual named clearDescription to my code which gives me a good description of the animal using name and specie field in the schema
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/59a30fa4-bbc0-4dc2-98d0-04c2cb4c2666)
+### Added the schema method named displayName()
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ee826a49-7ca2-44c0-a125-afd0c10ef498)
+
+
 
 
 
