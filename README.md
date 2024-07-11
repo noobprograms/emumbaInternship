@@ -101,6 +101,13 @@ Setting up mongod and connecting to it locally
 Suppose we often need all the animals whose age is less than 4 without indexing, all the 9/9 docs are examined and then we get the result in the form of 7 docs. What if ewe apply indexing to this field. THis will cause only 7 docs to be examined because the indexing will have sorted the ages accoring to their increasing order. First 7 will be picked and whereever the age was greater than 4 that will be ignored.
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/5cbd3132-9d28-45da-bb37-c22fad58e7a2)
 
+## Assignment 2
+### Testing out the unique name property by giving the same name in the new doc
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/9bee984d-15b8-4f5e-b5a6-96d1e3ba338a)
+### Testing out the pet specie custom validator.
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c40f6091-ae45-4daf-b776-634df267671a)
+
+
 
 
 
