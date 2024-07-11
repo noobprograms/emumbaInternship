@@ -97,6 +97,26 @@ Setting up mongod and connecting to it locally
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/cc0625ef-262a-4c9e-8ad3-09218e3577fb)
 
 
+## practicing indexing
+Suppose we often need all the animals whose age is less than 4 without indexing, all the 9/9 docs are examined and then we get the result in the form of 7 docs. What if ewe apply indexing to this field. THis will cause only 7 docs to be examined because the indexing will have sorted the ages accoring to their increasing order. First 7 will be picked and whereever the age was greater than 4 that will be ignored.
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/5cbd3132-9d28-45da-bb37-c22fad58e7a2)
+
+## Assignment 2
+### Testing out the unique name property by giving the same name in the new doc
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/9bee984d-15b8-4f5e-b5a6-96d1e3ba338a)
+### Testing out the pet specie custom validator.
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/c40f6091-ae45-4daf-b776-634df267671a)
+
+## Assignment 3
+### Adding a virtual named clearDescription to my code which gives me a good description of the animal using name and specie field in the schema
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/59a30fa4-bbc0-4dc2-98d0-04c2cb4c2666)
+### Added the schema method named displayName()
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ee826a49-7ca2-44c0-a125-afd0c10ef498)
+
+
+
+
+
 
 
 
