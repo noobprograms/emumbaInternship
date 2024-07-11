@@ -97,6 +97,12 @@ Setting up mongod and connecting to it locally
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/cc0625ef-262a-4c9e-8ad3-09218e3577fb)
 
 
+## practicing indexing
+Suppose we often need all the animals whose age is less than 4 without indexing, all the 9/9 docs are examined and then we get the result in the form of 7 docs. What if ewe apply indexing to this field. THis will cause only 7 docs to be examined because the indexing will have sorted the ages accoring to their increasing order. First 7 will be picked and whereever the age was greater than 4 that will be ignored.
+![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/5cbd3132-9d28-45da-bb37-c22fad58e7a2)
+
+
+
 
 
 
