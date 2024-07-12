@@ -3,10 +3,12 @@ const path = require('path');
 const animal_router = require('./src/routes/animal_routes');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 const app = express();
-mongoose.connect("mongodb+srv://waleed:1234@cluster0.fg5wxgy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { dbName: "animal_db" }).then(() => {
+mongoose.connect(process.env.mongo_url, { dbName: "animal_db" }).then(() => {
     console.log("connected to mongo");
     app.get('/', (req, res) => {
         res.send('Hello World');
