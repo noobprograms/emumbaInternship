@@ -18,7 +18,7 @@ const Animal = mongoose.Schema({
     },
     age: Number,
     price: { type: Number }
-}, { toJSON: { virtuals: true }, toObject: { virtuals: true } });
+}, {  toObject: { virtuals: true } });
 Animal.index({ age: 1 });
 Animal.methods.displayName = function() {
     return `${this.name} the ${this.species}`;

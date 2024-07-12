@@ -41,9 +41,9 @@ async function getUser(req, res) {
 async function deleteUser(req, res) {
     const { id } = req.params;
 
-    console.log("i am reaching uptil here");
+
     try {
-        console.log(`the object id ${id}`);
+
         const myUser = await user_model.findByIdAndDelete(id);
         if (myUser == null) {
             return res.status(404).send("User not found");

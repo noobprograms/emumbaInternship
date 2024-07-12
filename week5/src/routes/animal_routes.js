@@ -1,9 +1,11 @@
 const express = require('express');
 
 const animal_router = express.Router();
-const { getSpecificAnimal, getAllAnimals, addAnimal, getAnimalDiscription, getName } = require('../controllers/animal_controller');
+const { getSpecificAnimal, getAllAnimals, addAnimal, getAnimalDiscription, getName ,deleteAnimals,storeDataToDB} = require('../controllers/animal_controller');
 
 animal_router.get('/', getAllAnimals);
+animal_router.get('/storeDataToDB',storeDataToDB);
+animal_router.get('/deleteAnimal', deleteAnimals);
 animal_router.get('/getMyAnimal', getSpecificAnimal);
 animal_router.get('/getFullName', getName);
 
