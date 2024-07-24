@@ -1,6 +1,7 @@
 const User = require("../models/user_model");
 const bcrypt = require('bcryptjs');
 const { generateToken, generateRefreshToken } = require('../services/jwt_helper')
+const { client } = require('../services/init_redis');
 
 async function getUser(req, res, next) {
     try {
@@ -41,7 +42,7 @@ async function registerUser(req, res, next) {
 }
 
 async function loginUser(req, res, next) {
-    let { email, password } = req.body;
+    let { email, password, myUser } = req.body;
     try {
         const myUser = await User.findOne({ email });
         const isMatch = await myUser.isValidPassword(password);
@@ -62,7 +63,14 @@ async function loginUser(req, res, next) {
     }
 }
 
-function logoutUser(req, res) {
+function logoutUser(req, res, next) {
+    const { userID } = req.body;
+    try {
+        client.del(userID);
+        res.status(200).json({ status: "success", message: "Logged out successfully" })
+    } catch (e) {
+        next(e);
+    }
 
 }
 
@@ -71,6 +79,7 @@ function refreshToken(req, res, next) {
         const userID = req.body.userID;
         const refreshToken = generateRefreshToken(userID);
         const accessToken = generateToken(userID);
+        console.log("this is the place where the users is greeted witha  message from response")
         res.status(200).json({ status: "success", newAccessToken: accessToken, newRefreshToken: refreshToken });
     } catch (error) {
         next(error)

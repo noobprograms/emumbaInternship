@@ -6,8 +6,11 @@ const userRouter = require("./src/routes")
 const errorHandler = require('./src/controllers/error_handler');
 const errorMiddleware = require("./src/middleware/error_middleware");
 const app = express();
+const { clientInit } = require('./src/services/init_redis');
+clientInit();
 
 mongoose.connect(process.env.MONGODB_URL, { dbName: "userDatabase" }).then(() => {
+
     console.log("connected to mongodb");
 });
 app.use(express.json());
@@ -17,7 +20,7 @@ app.get("/", (req, res) => {
     console.log(
         "Hello World"
     );
-    res.send("thi sis the hello world route ")
+    res.send("thi is the hello world route ")
 });
 app.use('/users', userRouter);
 app.use(errorHandler);

@@ -1,8 +1,12 @@
 const express = require('express');
 const User = require('../models/user_model')
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
+const { client } = require('../services/init_redis');
+
 async function verifyRecordsForSignup(req, res, next) {
     let { username, email, password } = req.body;
+    console.log("i am coming inside this middleware statement");
+
     try {
 
         if (!username || !email || !password) {
@@ -31,8 +35,11 @@ async function verifyRecordsForSignup(req, res, next) {
             myError.status = 409;
             throw myError;
         }
+        console.log("i am coming inside this if statement");
+
         next()
     } catch (error) {
+        console.log("i am insid ethe catch statement of verify sign up middleware")
         next(error)
     }
 }
@@ -47,12 +54,13 @@ async function verifyRecordForSignIn(req, res, next) {
         }
         password = password.trim();
         email = email.trim();
-        const user = User.findOne({ email: email });
+        const user = await User.findOne({ email: email });
         if (!user) {
             const myError = new Error("User not found");
             myError.status = 401;
             throw myError;
         }
+        req.body.user = user;
         next();
 
     } catch (e) {
@@ -60,7 +68,7 @@ async function verifyRecordForSignIn(req, res, next) {
     }
 }
 
-async function verifyAccessToken(req, res, next) {
+async function verifyAccess(req, res, next) {
     try {
         const authHeader = req.headers.authorization;
         if (!authHeader) {
@@ -103,6 +111,8 @@ async function verifyRefreshToken(req, res, next) {
     try {
         const refreshToken = req.body.refreshToken;
         if (!refreshToken) {
+            console.log("the refresh token is being triggered");
+
             const myError = new Error("No refresh Token provided");
             myError.status = 401;
             throw myError;
@@ -117,12 +127,22 @@ async function verifyRefreshToken(req, res, next) {
             })
         });
         req.body.userID = userID;
+        client.get(userID, (err, result) => {
+            if (err) { next(err) }
+            if (refreshToken != result) {
 
+                const myError = new Error("Invalid refresh token");
+                myError.status = 401;
+                throw myError;
+            }
+        });
         next();
+
+
     } catch (error) {
         next(error);
     }
 
 }
 
-module.exports = { verifyRecordsForSignup, verifyRecordForSignIn, verifyAccessToken, verifyRefreshToken };
+module.exports = { verifyRecordsForSignup, verifyRecordForSignIn, verifyAccess, verifyRefreshToken };

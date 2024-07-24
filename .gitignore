@@ -6,5 +6,6 @@ week5/node_modules
 .env
 week6(auth_assingnment)/node_modules
 week6(auth_assingnment)/.env
+CORS.practice/backend/node_modules
 
 
