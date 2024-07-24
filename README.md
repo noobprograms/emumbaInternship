@@ -113,6 +113,9 @@ Suppose we often need all the animals whose age is less than 4 without indexing,
 ### Added the schema method named displayName()
 ![image](https://github.com/noobprograms/emumbaInternship/assets/78657816/ee826a49-7ca2-44c0-a125-afd0c10ef498)
 
+# Week 6 document
+https://docs.google.com/document/d/18wF5UxUjl9IzFLNRd7Vxi6Pkq--B81Gq2WjcYN3piDo/edit?usp=sharing
+
 
 
 
