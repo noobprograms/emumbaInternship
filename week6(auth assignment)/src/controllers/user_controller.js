@@ -42,21 +42,21 @@ async function registerUser(req, res, next) {
 }
 
 async function loginUser(req, res, next) {
-    let { email, password, myUser } = req.body;
+    let { email, password, user } = req.body;
     try {
-        const myUser = await User.findOne({ email });
-        const isMatch = await myUser.isValidPassword(password);
+
+        const isMatch = await user.isValidPassword(password);
         console.log("the value of ismatch is ", isMatch)
         if (!isMatch) {
             const myError = new Error("Wrong password");
             myError.status = 401;
             next(myError);
         }
-        console.log("the id of the user is ", myUser._id)
-        const myToken = generateToken(myUser._id);
-        const refreshToken = generateRefreshToken(myUser._id);
+        console.log("the id of the user is ", user._id)
+        const myToken = generateToken(user._id);
+        const refreshToken = generateRefreshToken(user._id);
         // console.log("the token is ", myToken);
-        res.status(200).json({ status: "success", message: myUser, accessToken: myToken, refreshToken: refreshToken });
+        res.status(200).json({ status: "success", message: user, accessToken: myToken, refreshToken: refreshToken });
 
     } catch (error) {
         next(error)
