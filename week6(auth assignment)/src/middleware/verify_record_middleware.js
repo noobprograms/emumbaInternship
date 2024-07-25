@@ -5,7 +5,7 @@ const { client } = require('../services/init_redis');
 
 async function verifyRecordsForSignup(req, res, next) {
     let { username, email, password } = req.body;
-    console.log("i am coming inside this middleware statement");
+
 
     try {
 
@@ -39,7 +39,7 @@ async function verifyRecordsForSignup(req, res, next) {
 
         next()
     } catch (error) {
-        console.log("i am insid ethe catch statement of verify sign up middleware")
+
         next(error)
     }
 }
@@ -48,6 +48,7 @@ async function verifyRecordForSignIn(req, res, next) {
     let { email, password } = req.body;
     try {
         if (!email || !password) {
+
             const myError = new Error("One of the fields was not provided")
             myError.status = 400;
             throw myError;
@@ -61,6 +62,7 @@ async function verifyRecordForSignIn(req, res, next) {
             throw myError;
         }
         req.body.user = user;
+        
         next();
 
     } catch (e) {
@@ -69,6 +71,7 @@ async function verifyRecordForSignIn(req, res, next) {
 }
 
 async function verifyAccess(req, res, next) {
+
     try {
         const authHeader = req.headers.authorization;
         if (!authHeader) {
@@ -77,6 +80,12 @@ async function verifyAccess(req, res, next) {
             throw myError;
         }
         const token = authHeader.split(" ")[1];
+        const result = await client.lRange('token',0,99999999)
+        if(result.indexOf(token) > -1){
+            const myError  = new Error("You are logged out. Login to continue");
+            myError.status = 400;
+            throw myError;
+        }
         const isVerified = await new Promise((resolve, reject) => {
             jwt.verify(token, process.env.ACCESS_JWT_SECRET, function(error, decoded) {
                 if (error) {
@@ -110,14 +119,28 @@ async function verifyAccess(req, res, next) {
 async function verifyRefreshToken(req, res, next) {
     try {
         const refreshToken = req.body.refreshToken;
+        const authHeader = req.headers.authorization;
+        if (!authHeader) {
+            const myError = new Error("No token provided");
+            myError.status = 401;
+            throw myError;
+        }
+        const token = authHeader.split(" ")[1];
         if (!refreshToken) {
-            console.log("the refresh token is being triggered");
+
 
             const myError = new Error("No refresh Token provided");
             myError.status = 401;
             throw myError;
         }
+        
 
+        const result = await client.lRange('token',0,99999999)
+        if(result.indexOf(token) > -1){
+            const myError  = new Error("You are logged out. Login to continue");
+            myError.status = 400;
+            throw myError;
+        }
         const userID = await new Promise((resolve, reject) => {
             jwt.verify(refreshToken, process.env.REFRESH_JWT_SECRET, function(error, decoded) {
                 if (error) {

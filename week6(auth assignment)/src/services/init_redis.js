@@ -1,12 +1,12 @@
 const redis = require('redis');
-
+require('dotenv').config()
 
 
 const client = redis.createClient({
-    port: 6379,
-    host: '127.0.0.1',
-    username: "default",
-    password: "waleed",
+    port: process.env.REDIS_PORT,
+    host: process.env.REDIS_HOST,
+    username: process.env.REDIS_USERNAME,
+    password: process.env.REDIS_PASSWORD,
 });
 
 client.on('connect', () => console.log("client is connected to redis"));

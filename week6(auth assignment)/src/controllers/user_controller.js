@@ -63,10 +63,25 @@ async function loginUser(req, res, next) {
     }
 }
 
-function logoutUser(req, res, next) {
+async function logoutUser(req, res, next) {
     const { userID } = req.body;
+    const token = req.headers.authorization.split(' ')[1];
     try {
         client.del(userID);
+        await client.LPUSH('token', token);
+        return res.status(200).json({
+          'status': 200,
+          'data': 'You are logged out',
+        });
+    } catch (error) {
+      return res.status(400).json({
+        'status': 500,
+        'error': error.toString(),
+      });
+    }
+    try {
+        
+        
         res.status(200).json({ status: "success", message: "Logged out successfully" })
     } catch (e) {
         next(e);
@@ -75,6 +90,7 @@ function logoutUser(req, res, next) {
 }
 
 function refreshToken(req, res, next) {
+    
     try {
         const userID = req.body.userID;
         const refreshToken = generateRefreshToken(userID);
