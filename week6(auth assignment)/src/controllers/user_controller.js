@@ -79,13 +79,7 @@ async function logoutUser(req, res, next) {
         'error': error.toString(),
       });
     }
-    try {
-        
-        
-        res.status(200).json({ status: "success", message: "Logged out successfully" })
-    } catch (e) {
-        next(e);
-    }
+    
 
 }
 
